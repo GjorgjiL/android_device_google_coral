@@ -64,6 +64,5 @@ PRODUCT_MODEL := Pixel 4XL
 
 # Match stock product info
 PRODUCT_OVERRIDE_INFO := true
-PRODUCT_OVERRIDE_NAME := coral
 PRODUCT_OVERRIDE_FINGERPRINT := google/coral/coral:11/RQ1A.210205.004/7038034:user/release-keys
 PRODUCT_OVERRIDE_DESC := coral-user 11 RQ1A.210205.004 7038034 release-keys
