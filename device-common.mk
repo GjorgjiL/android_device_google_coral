@@ -75,6 +75,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.config.low_ram = false \
 	ro.lmk.log_stats = true \
 
+# Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
+# on supported devices with Deep Press input classifier HALs and models
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.input.video_enabled=false
+
 # Modem logging file
 PRODUCT_COPY_FILES += \
     device/google/coral/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
